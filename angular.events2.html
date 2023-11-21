@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="apps" ng-controller="cntrl1">
+        <button ng-click="count=count+1">Mouse click</button>
+        <h3>{{count}}</h3>
+
+    </div>
+
+    <script>
+        var app=angular.module("apps",[]);
+        app.controller('cntrl1',function($scope){
+            $scope.count=0;
+        });
+    </script>
+</body>
+</html>
